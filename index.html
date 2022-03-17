@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>homepage</title>
+      <link rel="stylesheet" href="homepage.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    </head>
+    <body>
+           
+            <nav>
+    
+                <ul class="horizontal-list text-center nav-menu">
+                    <li>
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li>
+                        <a href="#section1"> movies </a>
+                    </li>
+                    <li>
+                        <a href="favourites.html"> favourites </a>
+                    </li>   
+                </ul>
+
+               
+                <div id="search-wrapper" >
+                  <input
+                    id="search-field"
+                    class="search-field"
+                    type="text"
+                    name="movie_name"
+                    placeholder="Search for a movie....."
+                    oninput="searchvalue(this.value)"
+                  />
+                  <button id="submit-btn" class="submit-btn fas fa-search" type="submit" ></button>
+                  <div id="wrappper"  >
+                  </div>
+              </div>
+        
+
+            </nav>
+                
+                <div class="left" onclick="plusSlides(-1)" ></div>
+                <div class="left-circle"></div>
+                   
+                 
+               
+                <div class="right" onclick="plusSlides(1)" ></div>
+                <div class="right-circle"></div>
+              
+                <div class="dots">
+                    <div class="dot a1" onclick="currentSlide(1)"></div>
+                    <div class="dot a2" onclick="currentSlide(2)"></div>
+                    <div class="dot a3" onclick="currentSlide(3)"></div> 
+                </div>
+    
+               
+                 
+                 
+                  <div class="cards" id="section1">
+                      <h1>NO MOVIES YET...</h1>
+                  </div>
+      
+                
+    <script src="homepage.js"></script>
+    </body>
+  </html>

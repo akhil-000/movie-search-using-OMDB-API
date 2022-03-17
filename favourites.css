@@ -1,0 +1,99 @@
+body{
+background-color: rgb(15, 106, 185);
+}
+
+.container{
+
+
+display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.imagediv{
+  z-index:1;
+  position: absolute;
+  left:0;
+  top:0;
+  width: 300px;
+  height:440px ;
+  background-color: #fff;
+}
+
+.card{
+   z-index:1;
+    position: relative;
+    left:0;
+    top: 0;
+    display: block;
+    width: 300px;
+    height: 444px;
+    margin:5px;
+    margin-bottom:150px ;
+  
+}
+
+.delete{
+  border-radius:50px ;
+  border:none ;
+   position: absolute;
+   right:0;
+   bottom:0;
+   width:3rem;
+   height:3rem;
+   background-color: rgb(239, 248, 248);
+}
+
+.delete:hover{
+  color:#fff;
+  background-color: black;
+}
+ 
+.card:hover .multi-button {
+  width: 11rem;
+  height: 11rem;
+}
+
+.imagediv:hover .multi-button {
+  width: 11rem;
+  height: 11rem;
+}
+
+
+
+.multi-button {
+  z-index: 0;
+  position: absolute;
+  bottom: 2rem;
+  left: 6rem;
+  border-radius: 100%;
+  width: 0rem;
+  height: 0rem;
+  transform: translate(-50%, 50%);
+  transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
+ 
+}
+
+.imagediv {
+ 
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.imagediv:hover .info {
+  transform: translateY(-95px);
+}
+ .info {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(70px + 4em));
+    transition: transform 0.3s;
+    background-color: rgba(10, 10, 10, 0.39);
+}
+
+
+ 
